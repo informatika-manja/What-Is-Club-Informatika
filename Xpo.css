@@ -1,0 +1,451 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: white;
+    background-image: linear-gradient(45deg, #5b58eb, #bb63ff, #56e1e9);
+    background-size: 400% 400%;
+    /* Tambahin ini biar gradasinya bisa digeser-geser */
+    background-position: 0% 50%;
+    background-attachment: fixed;
+    animation: MoveB 10s ease-in-out infinite;
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+@keyframes MoveB {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    25% {
+        background-position: 100% 0%;
+    }
+
+    50% {
+        background-position: 50% 100%;
+    }
+
+    75% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.group-logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header {
+    background-color: #0a2353;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+}
+
+.logoxpo {
+    margin-right: 15px;
+    width: 2rem;
+    height: 2rem;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-items: center;
+
+}
+
+.cont-nav {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+
+}
+
+.cont-point1 {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #0a2352, #0a235200);
+}
+
+.nume a{
+    margin-left: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.2s ease-in-out;
+}
+.nume a:hover{
+    color: rgb(8, 230, 0);
+}
+.menu a {
+    margin-left: 5px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: all 0.2s ease-in-out;
+}
+.menu a:hover{
+    color: #ff00ea;
+}
+
+.question1 {
+    font-size: 4rem;
+    margin-left: 1rem;
+    font-family: sans-serif;
+    display: flexbox;
+}
+
+.point1 {
+    padding: 1.7rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.point1 h1{
+    margin-bottom: 1rem;
+}
+
+.point1 h3{
+    width: 75%;
+    margin-left: 1rem;
+    font-family: sans-serif;
+    font-weight: lighter;
+}
+
+.point1 button{
+    margin-left: 1rem;
+    width: 15rem;
+    height: 2rem;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.point1 button:hover{
+    border: solid 2px rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0);
+    transition: 0.5s;
+    color: white;
+}
+
+    .slide {
+      position: absolute;
+      display: flex;
+      animation: slide 5s ease infinite;
+    }
+
+    .point1 img {
+      width: 25%; /* Half the width of the container */
+      object-fit: cover;
+    }
+
+@keyframes slide {
+    0% {
+        transform: translateX(100vw); 
+    }
+
+    10% { 
+        transform: translateX(70vw);
+    }
+
+    40% { 
+        transform: translateX(70vw);
+    }
+
+    50% { 
+        transform: translateX(100vw);
+    }
+
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+.point2-cont {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 5vw;
+}
+
+.point2 {
+    background-color: rgba(255, 255, 255, 0.137);
+    margin: 2rem;
+    border-radius: 20px;
+    padding: 1.7rem;
+    width: 40%;
+    transition: all 0.2s ease-in-out;
+    border: solid 2px rgba(255, 255, 255, 0);
+}
+.point2:hover{
+    border: solid 2px rgba(255, 255, 255, 0.37);
+    margin-top: 5px;
+}
+
+.point2-gambar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.jaringan {
+    background-color: rgba(255, 255, 255, 0.137);
+    margin: 2rem;
+    border-radius: 20px;
+    padding: 1.7rem;
+    width: 40%;
+    transition: all 0.2s ease-in-out;
+    border: solid 2px rgba(0, 0, 0, 0);
+}
+.jaringan:hover{
+    border: solid 2px rgba(255, 255, 255, 0.37);
+    margin-top: 5px;
+}
+
+.jaringan-gambar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.point3 {
+    background-color: rgba(255, 255, 255, 0.137);
+    margin: 2rem;
+    border-radius: 20px;
+    padding: 1.7rem;
+    width: 40%;
+    transition: all 0.2s ease-in-out;
+    border: solid 2px rgba(255, 255, 255, 0);
+}
+.point3:hover{
+    border: solid 2px rgba(255, 255, 255, 0.37);
+    margin-top: 5px;
+}
+
+.point3-gambar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.iot {
+    background-color: rgba(255, 255, 255, 0.137);
+    margin: 2rem;
+    border-radius: 20px;
+    padding: 1.7rem;
+    width: 40%;
+    transition: all 0.2s ease-in-out;
+    border: solid 2px rgba(0, 0, 0, 0);
+}
+.iot:hover{
+    border: solid 2px rgba(255, 255, 255, 0.37);
+    margin-top: 5px;
+}
+
+.iot-gambar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+@media (max-width : 565px) {
+    .question1 {
+        font-size: 2.7rem;
+    }
+        .point1 h2 {
+        font-size: 1rem;
+    }
+    .point2{
+        width: 50%;
+    }
+    .jaringan{
+        width: 50%;
+    }
+    .point3{
+        width: 50%;
+    }
+    .iot{
+        width: 50%;
+    }
+}
+
+@media (max-width : 422px) {
+    .cont-nav {
+        display: flex;
+        flex-direction: column;
+    }
+        .point1 h2 {
+        font-size: 1rem;
+    }
+    .question1{
+        font-size: 2.3rem;
+    }
+    .point2{
+        width: 50%;
+    }
+    .jaringan{
+        width: 50%;
+    }
+    .point3{
+        width: 50%;
+    }
+    .iot{
+        width: 50%;
+    }
+
+}
+
+@media (max-width : 375px) {
+    .question1 {
+        font-size: 2rem;
+    }
+    .point1 h2 {
+        font-size: 1rem;
+    }
+    .point2{
+        width: 50%;
+    }
+    .jaringan{
+        width: 50%;
+    }
+    .point3{
+        width: 50%;
+    }
+    .iot{
+        width: 50%;
+    }
+}
+
+.point3-cont{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-top: 5vw;
+    background: linear-gradient(to top, #0a2352, #0a235200);
+}
+
+.join {
+    margin-left: 2rem;
+    background-color: rgba(255, 255, 255, 0.137);
+    margin: 2rem;
+    border-radius: 20px;
+    padding: 1.7rem;
+    width: 100%;
+    transition: all 0.2s ease-in-out;
+    border: solid 2px rgba(255, 255, 255, 0);
+}
+
+.join-title{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.join-text{
+    color: white;
+}
+
+.join-text a{
+    color: white;
+}
+
+.join-text a:hover{
+    color: #ff00ea;
+}
+
+footer{
+    background-color: #0a2353;
+}
+.footerContainer{
+    padding: 70px 30px 20px ;
+}
+.socialIcons{
+    display: flex;
+    justify-content: center;
+}
+.socialIcons a{
+    text-decoration: none;
+    padding:  10px;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a img{
+    width: 1.5rem;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover{
+    transform: translateY(-0.5rem);
+    transition: 0.5s;
+}
+.socialIcons a:hover i{
+    color: white;
+    transition: 0.5s;
+}
+.footerNav{
+    margin: 30px 0;
+}
+.footerNav ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+.footerNav ul li a{
+    color:white;
+    margin: 20px;
+    text-decoration: none;
+    font-size: 1.3em;
+    opacity: 0.7;
+    transition: 0.5s;
+
+}
+.footerNav ul li a:hover{
+    opacity: 1;
+}
+.footerBottom{
+    background-color: #0a2353;
+    padding: 20px;
+    text-align: center;
+}
+.footerBottom p{
+    color: white;
+}
+.designer{
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 5px;
+}
